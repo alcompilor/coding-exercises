@@ -5,3 +5,5 @@
 - Gällande DRY principen har jag samlat allt affärslogik på ett ställe. Logiken för att kolla överlappande bokningar finns nu bara i `BookingService`. Controllern är helt fri från den logiken, den anropar bara servicen och fångar eventuella errors med try/catch. Det gör koden renare och mycket enklare att underhålla.
 <br />
 *OBS! Jag har övervägt att applicera DRY mellan interfaces, men när jag tänkte efter kom jag fram till att det kan bli en dålig designval i längden. Anledningen är att interfaces föredras vara separata för varje service när man använder Dependency Inversion, och att DRY i detta fall kan i framtiden bryta mot Interface Segregation principen i SOLID.*
+<br />
+![Demo Image](demo.png)
